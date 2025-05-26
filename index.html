@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mana Hak</title>
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Portfolio de Mana Hak</h1>
+    <p>étudiante en BTS SIO, option SLAM</p>
+    <div class="mobile-menu">
+    
+    <details class="collapsible">
+    <summary>Menu</summary>
+    <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#formation">Formations</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#veille">Veille technologique</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </details>
+
+  </div>
+    <!-- <nav class="desktop-menu">
+      <a href="#accueil">Accueil</a>
+      <a href="#competences">Compétences</a>
+      <a href="#formation">Formation</a>
+      <a href="#experiences">Expériences</a>
+      <a href="#veille">Veille</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav> -->
+  </header>
+
+  <div class="carousel-sidebar">
+    <div class="carousel-wrapper">
+      <div class="nav-controls top-control">
+        <button class="nav-arrow" onclick="moveCarousel(-1)">&#8679;</button>
+      </div>
+      <div class="carousel-content">
+        <div class="carousel-track" id="carousel-track">
+          <!-- Buttons dynamically added by JS -->
+        </div>
+      </div>
+      <div class="nav-controls bottom-control">
+        <button class="nav-arrow" onclick="moveCarousel(1)">&#8681;</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="accueil">
+      <div class="centered-h2">
+	    <h2>Bienvenue sur mon portfolio_</h2>
+    </div>
+      <p>Je suis Mana, étudiante en région parisienne, en première année de BTS SIO, option SLAM.</p>
+      <p>Ma première véritable expérience avec le développement informatique à été avec des minuscules projets Python au collège. Je m'y suis plus tard mise sérieusement avec Ren'py et d'autres petits jeux en Python.</p>
+      <p>J'aimerai actuellement devenir développeur UI/UX.</p>
+    </section>
+
+
+    <section id="competences">
+    <div class="centered-h2">
+      <h2>#</h2>
+	    <h2>Compétences</h2>
+    </div>
+            <p>PHP, Java, Python, SQL (MySQL)
+            <BR>Scripting : Linux (shell bash...), powershell
+            <BR>Notions RGPD, EBIOS, bonnes pratiques
+            <BR>Sécurisation / disponibilité des équipements et services, sécurisation des données
+            <BR>Suite Office/Google, VS Code</p>
+
+            <div class="image-box-4">
+                <img src="compet/php.png" alt="php">
+                <img src="compet/java.png" alt="java">
+                <img src="compet/python.png" alt="python">
+                <img src="compet/mysql.png" alt="mysql">
+            </div>
+
+            <p>Autonome
+            <BR>Bonne adaptativité</p>
+
+            <p>Montage vidéo (DaVinci Resolve, Capcut)
+            <BR>Dessin et graphisme digital
+            <BR>Notions en interface utilisateur de jeu
+            <BR>Ren'py (Pygame)
+            <BR>Anglais (C1, certification Cambridge)
+            <BR>Khmer (oral courant)</p>
+
+            <div class="image-box-3">
+                <img src="compet/france.webp" alt="français">
+                <img src="compet/uk.png" alt="anglais">
+                <img src="compet/cambodia.png" alt="cambodgien">
+            </div>
+
+
+    </section>
+
+    <section id="formation">
+      <div class="centered-h2">
+        <h2>#</h2>
+	    <h2>Formation</h2>
+    </div>
+      <p>Brevet Technicien Supérience Service Informatique aux Organisations, option solution logicielle et applications métiers.</p>
+      <p>Le <b>BTS SIO option SLAM</b> permet d'acquérir des compétences dans trois domaines d'activité :</p>
+
+        <q><p>Support et mise à disposition de services informatiques : répondre aux attentes des utilisateurs en assurant la disponibilité des services informatiques existants ; prendre en compte les besoins informatiques dans l'entreprise et accompagner la transformation numérique des services informatiques ; gérer le patrimoine informatique, répondre aux incidents, développer la présence de l'entreprise sur le Web ; organiser son propre développement tout en s'intégrant aux équipes pour travailler en mode projet.</p>
+
+        <p>Conception et développement d'applications : conception, développement, déploiement et maintenance des composants logiciels d'une solution applicative (Web, mobile, client…) ; conception, développement et maintenance d'une solution applicative, bases de données, gestion des données numériques, gestion de versions (Git/forme logicielle).</p>
+
+        <p>Cybersécurité des services informatiques : cybersécurisation d'une infrastructure réseau, d'un système ou d'un service et analyse des risques encourus par les entreprises en tenant compte des dimensions techniques, organisationnelles ou encore juridiques ; protection des données et identité numérique de l'entreprise, sécurisation des équipements et des usages.</p> 
+
+        <p>Sous statut scolaire, l'élève est en stage pendant 10 semaines, réparties sur les 2 années de formation.</p></q>
+
+        <cite><a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" target="_blank">Onisep</a></cite>
+    </section>
+
+    <section id="experiences">
+      <div class="centered-h2">
+        <h2>#</h2>
+	    <h2>Expériences</h2>
+    </div>
+
+      <p>J'ai obtenu mon baccalauréat général en 2024 avec mention Assez Bien, en LLCE (Langue, littérature et culture étrangère) Anglais et Physique-Chimie. J'effectue actuellement un BTS SIO, option SLAM. Se trouve ci-dessous mes travaux et expériences effectués au sein de la formation.</p>
+
+        <details class="collapsible">
+        <summary>Stage de 1ère année</summary>
+        <ul>
+            <p>Au mois de juin 2025, j'ai effectué mon stage au sein du service informatique de la collectivité d'Agen, une structure intercommunale regroupant la ville d'Agen et une partie de son aire urbaine. L'agglomération est dirigée par un président élu, actuellement Jean Dionis du Séjour.</p>
+
+            <section id="carte">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2860.1937807196546!2d0.6136170760330828!3d44.203075171081345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12abb32406d8cc9b%3A0xd9620364119bc974!2sMairie%20d&#39;Agen!5e0!3m2!1sfr!2sfr!4v1747922331116!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </ul>
+        </details>
+
+        <BR>
+
+        <details class="collapsible">
+        <summary>Stage de 2ème année</summary>
+        <ul>
+            <p>J'ai effectué mon stage au sein du service informatique de la collectivité d'Agen, une structure intercommunale regroupant la ville d'Agen et une partie de son aire urbaine. L'agglomération est dirigée par un président élu, actuellement Jean Dionis du Séjour.</p>
+
+            <section id="carte">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2860.1937807196546!2d0.6136170760330828!3d44.203075171081345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12abb32406d8cc9b%3A0xd9620364119bc974!2sMairie%20d&#39;Agen!5e0!3m2!1sfr!2sfr!4v1747922331116!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </ul>
+        </details>
+
+        <BR>
+        <BR>
+
+        <details class="collapsible">
+        <summary>Projets universitaires de 1ère année</summary>
+        <ul>
+          <h3>Projet "Qui-est-ce?"</h3>
+            <img src="exp\quiestce1.png" alt="qui est ce" class="clickable-img" style="width: 28.5%">
+            <img src="exp\quiestce2.png" alt="qui est ce" class="clickable-img">
+            <p>Le but de ce projet ? Réaliser un code PHP permettant de répondre à diverses questions, et l'algorithme devinera à quel personnage l'utilisateur fait référence.</p>
+            <p>La particularité de ce programme est l'inclusion d'un système (léger) de correction d'erreur. L'utilisateur a l'option de mentir une fois à l'une des questions, et l'algorithme réussira tout de même à trouver la bonne réponse.</p>
+        </ul>
+        </details>
+
+        <BR>
+
+        <details class="collapsible">
+        <summary>Projets universitaires de 2ème année</summary>
+        <ul>
+          <h3>Projet</h3>
+            <p>...</p>
+        </ul>
+        </details>
+
+        <BR>
+        <BR>
+
+        <details class="collapsible">
+        <summary>Projets personnels</summary>
+        <ul>
+            <p>Je développe quelques fois dans mon temps libre du programme, notamment en Ren'py (dérivé de Python), et Python lui-même.</p>
+
+            <p>Avec de la programmation orientée objet, j'ai réussi à coder un système d'inventaire pour un jeu détective. L'inventaire sert au joueur à stocker des items numériques dans le contexte du jeu; ici, il permet de faire une liste de toutes les preuves et les indices qui aideront à la résolution d'une enquête détective.</p>
+            <img src="exp\capturepoo.png" alt="aperçu du code" class="clickable-img">
+            <p>Les attributs définis servent à identifier l'item (l'indice) et son utilité, mais ont aussi été adaptés pour l'interface graphique, dont je me suis également occupée entièrement (code, contenu, interface graphique).</p>
+            <p>J'ai plusieurs fois contribué à des projets en tant que UI artist et développeur dans les prjets d'autrui.</p>
+
+            <img src="exp\01.png" alt="capture du projet" class="clickable-img"> 
+            <!-- <img src="exp\01.png" alt="capture du projet" class="clickable-img" data-index="0">  -->
+            <!-- data-index permet de mettre un order aux img qu'on fait défiler -->
+
+            <img src="exp\02.png" alt="capture du projet" class="clickable-img">
+            <img src="exp\03.png" alt="capture du projet" class="clickable-img">
+
+        </ul>
+        </details>
+
+    </section>
+
+    <section id="veille">
+      <div class="centered-h2">
+        <h2>#</h2>
+	    <h2>Veille Technologique</h2>
+    </div>
+      <h3>Conséquences environnementales de l'IA générative</h3>
+      <p>L'intelligence artificielle générative ou IA générative est un type de système d'intelligence artificielle capable de générer du texte, des images, des vidéos ou d'autres médias en réponse à des requêtes.</p>
+      <cite><a href="https://fr.wikipedia.org/wiki/Intelligence_artificielle_g%C3%A9n%C3%A9rative" target="_blank">Wikipédia</a></cite>
+
+        <!-- <div class="scroll-box">
+            <p>24/05/25 # <a href="https://mashable.com/article/generative-ai-environment-impact-us-government" target="_blank">U.S. government agency sounds alarm on AI's toll on environment, humanity</a></p>
+            <p>Élément 2</p>
+            <p>Élément 3</p>
+            <p>Élément 4</p>
+            <p>Élément 5</p>
+            <p>Élément 6</p>
+            <p>Élément 7</p>
+        </div> -->
+
+        <div class="article-wrapper">
+          <div class="article-box">
+            <div class="article-preview-container">
+              <a href="https://mashable.com/article/generative-ai-environment-impact-us-government" target="_blank" class="article-preview">
+                <h3>U.S. government agency sounds alarm on AI's toll on environment, humanity</h3>
+                <p class="synopsis">The nonpartisan Government Accountability Office says much more research on AI is needed.</p>
+                <p class="date">25/04/25</p>
+              </a>
+              <a href="https://www.emergingtechbrew.com/stories/2025/05/12/deepseek-chips-sustainability" target="_blank" class="article-preview">
+                <h3>DeepSeek AI uses fewer chips, making it more sustainable, study finds</h3>
+                <p class="synopsis">But without “responsible deployment,” even efficient AI models can have harmful environmental impacts, according to Greenly.</p>
+                <p class="date">12/05/25</p>
+              </a>
+              <a href="https://www.techradar.com/health-fitness/fitness-apps/ais-environmental-impact-is-a-growing-concern-but-hiking-app-alltrails-sees-a-path-to-coexistance" target="_blank" class="article-preview">
+                <h3>AI's environmental impact is a growing concern, but hiking app AllTrails sees a path to coexistance</h3>
+                <p class="synopsis">"That's something we think about with every features we build."</p>
+                <p class="date">13/05/25</p>
+              </a>
+            </div>
+          </div>
+
+
+    </section>
+
+    <section id="cv">
+    <div class="centered-h2">
+      <h2>#</h2>
+	    <h2>CV</h2>
+    </div>
+    <p>Retrouvez ci-dessous mon CV.</p>
+    <div class="cv-content">
+        <img src="cv.jpg" alt="cv" class="clickable-img">
+        <div class="cv-links">
+        <p><a href="https://drive.google.com/file/d/1s9I2KgxF38ois4Hjwv6djj0rkOJ0WwDG/view?usp=sharing" target="_blank" download>Télécharger mon CV (FR / PDF)</a></p>
+        <p><a href="https://drive.google.com/file/d/1fukurp_TrZOGTnXpLsnYGu3NOQFQIq9c/view?usp=sharing" target="_blank" download>Download my CV (ENG / PDF)</a></p>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="centered-h2">
+        <h2>#</h2>
+	    <h2>Contact</h2>
+    </div>
+      <p>Adresse email : manahak@outlook.fr</p>
+      <p><a href="https://www.linkedin.com/in/mana-hak-b58b81336/" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>placeholder</p>
+  </footer>
+  
+  <!-- modale pour les images (pr qu'elles soient cliquables) -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <button id="prev-btn" class="nav-btn">&#8678;</button>
+        <button id="next-btn" class="nav-btn">&#8680;</button>
+    </div>
+
+    <!-- bouton pour mobile "retour vers le haut" -->
+    <button id="scrollToTopBtn" aria-label="Retour en haut">&#8679;</button>
+
+
+  <script src="script.js"></script>
+</body>
+
+<div id="loader">
+	<div class="spinner"></div>
+</div>
+
+</html>
