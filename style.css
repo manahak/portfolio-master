@@ -1,25 +1,46 @@
 body {
 	margin: 0;
-	font-family: 'NotoSans', Arial, sans-serif;
-	background-color: #191724;
+	background-color: #2f2d3d;
 	color: #ffffff;
 	scroll-behavior: smooth;
+	font-family: 'NotoSans', Arial, sans-serif;
 	font-size: 1.3rem;
+}
+
+.p1 { /* pour le corps de texte "normal" (en dehors des boites/boutons/collapsible)*/
+	font-family: 'NotoSans', Arial, sans-serif;
+	font-size: 1.3rem;
+	text-align: center;
+	width: calc(100vw - 380px); /* 380px = largeur du carousel */
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h2, h3, h4, h5, h6, header, .carousel-button {
 	font-family: 'BarlowCondensed', Arial, sans-serif;
 }
 
-header, footer {
+header {
 	color: #7edeed;
-    margin-left: 20px;
+	background-color: #1c192e;
+    /* margin-left: 20px; */
+	/* text-align: center; */
+	/*padding: 1rem;*/
+	width: 100%;
+	position: fixed;
+}
+
+footer {
+	color: #7edeed;
+	background-color: #1c192e;
+    /* margin-left: 20px; */
 	/* text-align: center; */
 	padding: 1rem;
 }
 
 header h1 {
-	font-size: 4rem;
+	font-size: 2.5rem;
 	color: #ffffff;
 	font-family: 'Quantico', Arial, sans-serif;
 	margin-left: 20px;
@@ -30,7 +51,7 @@ header h1 {
 		0 0 18px #1978b7,
 		0 0 30px #16417a;
 
-	/* Facultatif : animation de pulsation néon */
+	/* animation de pulsation néon */
 	animation: neonPulse 2s ease-in-out infinite alternate;
 }
 
@@ -55,6 +76,7 @@ section h2 {
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
 	color: #eb2e3b;
+	Highlight: #eb2e3b;
 }
 
 .centered-h2 {
@@ -89,13 +111,56 @@ section h2 {
 
 
 img {
-  border: 1px solid #7edeed;
+  /*border: 1px solid #7edeed;*/
   border-radius: 5px;/* coins arrondis */
   max-width: 100%;/*les images ne dépassent pas leur conteneur */
   height: auto;
+  vertical-align: middle;
 }
 
+table {
+            <!--border-collapse: collapse;-->
+            border: 3px solid #7ebded;
+        }
+
+        td {
+            /*border: 2px solid #7ebded*/;
+			padding: 10px;
+			border-radius: 10px;
+        }
+		
+		th
+        {
+            /*border: 2px solid #7ebded*/;
+			background-color: #1c192e;
+			padding: 20px;
+			border-radius: 10px;
+        }
+
+        table#table1 {
+            table-layout: fixed;
+			text-align: center;
+			width: 70%;
+			position: center;
+        }
+		
+		table#table2 {
+            table-layout: fixed;
+			text-align: center;
+			width: 60%;
+			position: center;
+        }
+
 #carte iframe { /*pour les google maps*/
+	border: 2px solid #7ebded;
+	border-radius: 15px;
+	display: block;
+	margin: 0 auto;
+	width:500px;
+	height:200px;
+}
+
+#carte { /*leaflet*/
 	border: 2px solid #7ebded;
 	border-radius: 15px;
 	display: block;
@@ -233,12 +298,12 @@ section {
 .carousel-wrapper::before { 
     /* bord en haut du carousel */
 	top: 0;
-	background: linear-gradient(to bottom, #191724 80%, transparent);
+	background: linear-gradient(to bottom, #2f2d3d 80%, transparent);
 }
 
 .carousel-wrapper::after {
 	bottom: 0;
-	background: linear-gradient(to top, #191724 80%, transparent);
+	background: linear-gradient(to top, #2f2d3d 80%, transparent);
 }
 
 .carousel-content {
@@ -247,7 +312,7 @@ section {
 	height: 100%;
 	overflow: hidden;
 	border-radius: 10px;
-	background-color: #191724;
+	background-color: #2f2d3d;
 }
 
 .carousel-track {
@@ -490,6 +555,35 @@ a {
 }
 
 
+.image-box-3 { /*boite pour 3 images*/
+	background-color: #1c1326;
+	border: 2px solid #7ebded;
+	border-radius: 25px;
+	padding: 1rem;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	width: 900px;
+	margin-left: calc((100vw - 380px - 900px) / 2);
+}
+
+.image-box-3 img {
+	width: 28%; /* un peu plus large pour 3 images */
+	max-width: 240px;
+	border: 2px solid #fff;
+	border-radius: 6px;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+.image-box-3 img:hover {
+	transform: scale(1.05);
+	border-color: #d42632;
+}
+
 .image-box-4 { /*pour les boites contenant 4 images*/
 	background-color: #1c1326;
 	border: 2px solid #7ebded;
@@ -520,7 +614,7 @@ a {
 	border-color: #d42632;
 }
 
-.image-box-3 { /*boite pour 3 images*/
+.image-box-5 { /*pour les boites contenant 5 images*/
 	background-color: #1c1326;
 	border: 2px solid #7ebded;
 	border-radius: 25px;
@@ -532,19 +626,20 @@ a {
 	flex-wrap: wrap;
 	gap: 1rem;
 	width: 900px;
+	/* centré comme tes menus déroulants, ajuste margin si besoin */
 	margin-left: calc((100vw - 380px - 900px) / 2);
 }
 
-.image-box-3 img {
-	width: 28%; /* un peu plus large pour 3 images */
-	max-width: 240px;
+.image-box-5 img {
+	width: 16%; /* 4 images sur une ligne */
+	max-width: 180px;
 	border: 2px solid #fff;
 	border-radius: 6px;
 	transition: transform 0.3s ease;
 	cursor: pointer;
 }
 
-.image-box-3 img:hover {
+.image-box-5 img:hover {
 	transform: scale(1.05);
 	border-color: #d42632;
 }
@@ -586,12 +681,10 @@ a {
 	padding: 1rem;
 	width: 800px;
 	color: white;
-
-	position: relative;
+	/*position: relative;*/
 	margin-left: calc((100vw - 300px - 900px) / 2); /* centré entre gauche et carousel */
 
 }
-
 
 .article-box h2 {
 	color: #eb2e3b;
@@ -642,6 +735,77 @@ a {
 	color: #bbb;
 }
 
+/* camembert de progression (section compétence) */
+.cmpts {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cmpt {
+  flex-direction: row;
+  align-items: center;
+  display: inline-flex;
+}
+
+.cmpts p {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2px;
+  width: 200px;
+  position : relative;
+  /*text-shadow:
+		0 0 8px #26ced4,
+		0 0 12px #26b1d4,
+		0 0 18px #1978b7,
+		0 0 30px #16417a;
+  right : 230px;
+  top : -60px;
+  
+  animation: neonPulse 2s ease-in-out infinite alternate;*/
+  
+}
+
+.progress-circle {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 10%;
+  background: conic-gradient(#0ff 0% 0%, #000 0% 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.1s;
+  margin: 20px;
+}
+
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background: #1c192e; /* couleur du fond vide au centre */
+  border-radius: 10%;
+}
+
+.progress-circle .number {
+  position: absolute;
+  top : 55px;
+  font-size: 20px;
+  color: #ffffff;
+  /*text-shadow: 0 0 6px #7edeed;*/
+  z-index: 1;
+}
+
+.progress-circle:hover {
+  filter: drop-shadow(0 0 10px #eb2e3b);
+}
+
+.progress-circle:hover::before {
+  box-shadow: 0 0 10px #eb2e3b;
+}
+
 
 /* pour petits écrans */
 @media screen and (max-width: 1150px) {
@@ -651,6 +815,11 @@ a {
         margin-left: 0px;
         padding: 1rem;
     }
+	
+	.p1 {
+	text-align: justify;
+	width: 70%;
+}
 
 	.centered-h2 {
 		width: 90%;
@@ -746,3 +915,76 @@ a {
 
 }
 
+.scrolldown {
+    --color: rgb(255,255,255);
+    --sizeX: 30px;
+    --sizeY: 50px;
+    /*position: relative;*/
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX / 2);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+
+    position: relative;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
+}
+
+.scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #ffffff66;
+}
+
+
+.chevrons {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.chevrondown:nth-child(odd) {
+    animation: pulse 500ms ease infinite alternate;
+}
+
+.chevrondown:nth-child(even) {
+    animation: pulse 500ms ease infinite alternate 250ms;
+}
+
+
+@keyframes pulse {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
